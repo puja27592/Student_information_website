@@ -1,0 +1,139 @@
+
+body 
+{
+	background: #ffb744;
+	font-family: "Times New Roman", Times, serif;
+	margin: 0;
+}
+#background {
+	background: url(./bg-pattern.jpg) repeat-x center top;
+	min-height: auto;
+	
+}
+#page {
+	width: 920px;
+	margin: 0 auto;
+}
+#logo
+{
+	background-color:#009999;
+	border-radius:10px;
+	height:90px;
+	text-align:center;
+}
+
+#pic{
+	margin: 0 auto;
+	width: 900px;
+	float: left;
+	
+	height: 100%;
+	margin-top: 5px;
+}
+#section {
+	height:100%;
+	width:100%;
+	background-color:white;
+	margin-bottom:5px;
+	margin-top:5px;
+} 
+
+#tabul{
+	margin-left: 30px;;
+}
+#location{
+	width:100%;
+	background-color:white;
+	margin-top:20px;
+	margin-bottom:20px;
+	height:100%;
+}
+/**---------------------------navigation----------------------**/
+#navigation {
+	background: url(./bg-navigation.png) no-repeat;
+	clear: both;
+	height: 50px;
+	width: 950px;
+	margin: 0 auto;
+	padding: 1px;
+}
+#navigation ul {
+	display: inline-block;
+	width: 1000px;
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+}
+#navigation li {
+	float: left;
+	background-position: 0 -118px;
+	background-repeat: no-repeat;
+	height: 49px;
+	width: 130px;
+	margin: 0;
+	padding-left: 1px;
+	text-align: center;
+}
+
+#navigation li a {
+	color: #fff;
+	display: block;
+	font: bold 14px/48px Arial, Helvetica, sans-serif;
+	height: 49px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#navigation li a:hover {
+	background-position: 0 -59px;
+	color: #6d6157;
+}
+#navigation li.selected a {
+	background-position: 0 0;
+	color: #e4e1bd;
+}
+#navigation li, #navigation li a:hover, #navigation li.selected a {
+	background-image: url(./bg-menu.png);
+	background-repeat: repeat-x;
+}
+/**----------------------------------navigation----------------------**/
+
+
+
+#gap
+{
+	margin-top: 5px;
+	clear: both;
+}
+
+
+
+
+
+#footer {
+	color: #456f7f;
+	line-height: 20px;
+	width: 930px;
+	margin: 0 auto;
+	padding: 0px 10px;
+}
+
+#footer ul.contacts {
+	float: left;
+	font-size: 12px;
+	list-style: none;
+	width: 280px;
+	margin: 0;
+	padding: 0 0 10px;
+}
+#footer ul.contacts h3 {
+	font-size: 14px;
+	margin: 0 0 10px;
+	text-transform: uppercase;
+}
+#footer ul.contacts li span {
+	float: left;
+	width: 50px;
+}
+#footer ul.contacts li p {
+	margin: 0 0 0 50px;
+}

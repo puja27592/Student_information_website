@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Department of Computer Science  </title>
+	<link rel="stylesheet" href="CSS/index.css"/>
+	
+</head>
+<body>
+	<div id="background">
+		<div id="page">
+			<div id="header">
+				<div id="logo">
+					<a href="index.html"><img src="images/logo.png" alt="LOGO" height="90" width="480"></a>
+				</div>
+				<div><br></div>
+				<nav id = "navigation" >
+					<ul>
+						<li class="selected"> 
+							<a class="active" href="./index.html">Home</a>
+						</li>
+						<li>
+							<a href="./Courses.html">Courses</a>
+						</li>
+						<li>
+							<a href="./student.php">Student</a>
+						</li>
+						<li>
+							<a href="./Faculty.php">Faculty</a>
+						</li>
+						<li>
+							<a href="./gallary.html">Gallary</a>
+						</li>
+						<li>
+							<a href="./About.html">About us</a>
+						</li>
+						<li>
+							<a href="contact.html">Contact Us</a> 
+						</li>
+					</ul>
+				</nav>
+			</div> 
+				<div id="dept_head">
+					<marquee   direction="Right" scrolldelay="200" behavior=alternate >
+						<h2>Department of Computer Science </h2>
+					</marquee>
+				</div>
+			<div id="contents">
+				<div id="gallery" style="position: relative">
+					<img class="mySlides" src="images/1.jpg" style="width:100%;height:480px">
+					<img class="mySlides" src="images/2.jpg" style="width:100%;height:480px">
+					<img class="mySlides" src="images/img_1.jpg" style="width:100%;height:480px">
+					<img class="mySlides" src="images/5.jpg" style="width:100%;height:480px">
+					<img class="mySlides" src="images/img_2.jpg" style="width:100%;height:480px">
+					<img class="mySlides" src="images/6.jpg" style="width:100%;height:480px">
+					<img class="mySlides" src="images/img_3.jpg" style="width:100%;height:480px">
+					<img class="mySlides" src="images/8.jpg" style="width:100%;height:480px">
+					<img class="mySlides" src="images/img_5.jpg" style="width:100%;height:480px">
+					
+				</div>
+				
+				<div id="gap"><br><hr><br></div>
+				<div id="containern">
+				<div id="pic_news" style="float: left;">
+					<div id="hod">
+						<h3>HOD'S DESK</h3>
+						<a href="faculty.php">
+							<img src = "images/hod.jpg"/> 
+						</a>
+						<p 	style="text-align: center; color: white">
+							<a href="faculty.php" style="color: white"><B>Dr. T. Chithralekha</B></a><br/>Head Of Department
+						</p><br>
+						<p>
+							The Department aims at imparting quality education in 
+							Computer Science & Engineering and Information Technology
+							through various post-graduate programmes. It also offers
+							an atmosphere conducive for research scholars for pursuing 
+							research in various advanced areas of Computer Science, 
+							Engineering and Information Technology.
+						</p>
+					</div>
+					<div id="newsn">
+						<div>
+							<a href = "recent.html">
+							<div id ="side_position" style="position:relative">
+								<aside id="side_news">
+									<h2 id="recent">
+										<b>RECENT</b>
+									</h2>
+									<marquee 	behavior="scroll" 
+												direction="up"
+												onmouseover="this.stop()"
+												onmouseleave="this.start()" scrolldelay="300"
+												style="font-color: white">
+										<ul>
+											<li>Dept. freshers on 27 october</li>
+											<p></p>
+											<li>MindFire Interview for shortlisteds on 2'nov</li>
+											<p></p>
+											<li>mini project review on 31oct</li>
+											<p></p>
+											<li>Dept. external exam starts from 2 nov</li>
+											<p></p>
+											<li> 4th sem result declaration</li>
+											<p></p>
+										</ul>
+									</marquee>
+								</aside>
+							</div>
+							</a>
+						</div>
+					</div>
+				</div>
+					<div id="new_para">
+						
+							<li>
+								<h2> Class Rooms</a></h2>
+								<p><b>	Department has numerous of class rooms. 
+										A classroom is a learning space, a room 
+										in which classes are held. Classrooms 
+										are found in educational institutions 
+										of all kinds, from preschools to 
+										universities, and may also be found in
+										other places where education or training
+										is provided, such as corporations and 
+										religious and humanitarian organizations.</b> 
+								</p><hr>
+							</li>
+							<li>
+								<hr><h2> Seminar Hall</a></h2>
+								<p><b>	Department has few seminar halls for department seminars, 
+										conducting interviews, meetings, presentations, 
+										reviews, etc. All halls are fully air conditioned. 
+										All halls having projectors also, which are used 
+										for taking seminars or presentaions.  
+										</b> 
+								</p><hr>
+							</li>
+							<li>
+								<hr><h2> Computer Labs</a></h2>
+								<p><b>	Department has more than 5 computer lab rooms. 
+										All labs having approx 45-50 computers integrated 
+										with internet connectivity. All labs are a/c and 
+										also used for lab examinations. All labs having 
+										extra comfortable chairs, and having updated 
+										softwares installed in all computers.</b> 
+								</p><hr>
+							</li>
+						
+					</div>
+				<div id="gap"><hr></div>
+				
+				
+				<script>
+					var myIndex = 0;
+					carousel();
+
+					function carousel() 
+					{
+						var i;
+						var x = document.getElementsByClassName("mySlides");
+						for (i = 0; i < x.length; i++) 
+						{
+							x[i].style.display = "none";  
+						}	
+						myIndex++;
+						if (myIndex > x.length) 
+						{
+							myIndex = 1
+						}    
+						x[myIndex-1].style.display = "block";  
+						setTimeout(carousel, 4000); // Change image every 4 seconds
+					}
+				</script>
+			</div>
+		</div>
+	</div>
+	
+	<div class="footer-top"style="background:#2c3e50;">
+		<div class="container" style="color:white;height:60px;width:100%;border-radius:10px;text-align:center;font-weight:bold;background:#3498db;margin-bottom:20px;padding:10px;">
+			<h2><strong>VISITED COMPANIES</strong></h2>
+		</div>
+		<div class="com1" style="float:left;margin-left:80px;">
+			<a href="https://www.mindfire.com"><img src="images/mindfire.jpg" style="width:280px;height:120px;">
+		</div>
+		<div class="com2" style="float:left;margin-left:80px;">
+			<a href="https://www.microsoft.com"><img src="images/microsoft.jpg" style="width:280px;height:120px;">
+		</div>
+		<div class="com3" style="float:left;margin-left:80px;">
+			<a href="http://www.wipro.com/"><img src="images/wipro.jpg" style="width:280px;height:120px;">
+		</div>
+		<div class="gaps" style="float:left;background:#2c3e50;height:40px;width:100%;">
+			
+		</div>
+		<div class="com4" style="float:left;margin-left:80px;">
+			<a href="https://www.logicheart.com"><img src="images/logicheart.jpg" style="width:280px;height:120px;">
+		</div>
+		<div class="com5" style="float:left;margin-left:80px;">
+			<a href="https://www.amazon.com"><img src="images/Amazon-logo.jpg" style="width:280px;height:120px;">
+		</div>
+		<div class="com6" style="float:left;margin-left:80px;">
+			<a href="https://www.ibm.com"><img src="images/ibm.jpg" style="width:280px;height:120px;">
+		</div>
+		<div class="gaps" style="float:left;background:#2c3e50;height:40px;width:100%;">
+			
+		</div>
+		<div class="com6" style="float:left;margin-left:80px;">
+			<a href="https://www.hcl.com"><img src="images/hcl.jpg" style="width:280px;height:120px;">
+		</div>
+		<div class="com6" style="float:left;margin-left:80px;">
+			<a href="https://www.group10.com"><img src="images/g10.jpg" style="width:280px;height:120px;">
+		</div>
+		<div class="com6" style="float:left;margin-left:80px;">
+			<a href="https://www.tcs.com"><img src="images/tcs.jpg" style="width:280px;height:120px;">
+		</div>
+	</div>
+<!--//footer-top-->
+	</div>
+</body>
+</html>

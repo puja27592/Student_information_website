@@ -1,0 +1,106 @@
+
+body 
+{
+	background: #ffb744;
+	font-family: "Times New Roman", Times, serif;
+	margin: 0;
+}
+#background {
+	background: url(./bg-pattern.jpg) repeat-x center top;
+	min-height: auto;
+	
+}
+#page {
+	width: 920px;
+	margin: 0 auto;
+}
+#logo
+{
+	background-color:#009999;
+	border-radius:10px;
+	height:90px;
+}
+
+#page1
+{
+	width:920px;
+	margin:0 auto;
+	height: 500px;
+	background-color:#009999;
+	
+}
+#back h4{
+	text-align:center;
+	color:white;
+	background:red;
+	height:35px;
+	width:120px;
+	border:1px solid black;
+	border-radius:5px;
+	margin-left:20px;
+	text-decoration:none;
+}
+
+ 
+/**---------------------------navigation----------------------**/
+#navigation {
+	background: url(./bg-navigation.png) no-repeat;
+	clear: both;
+	height: 50px;
+	width: 950px;
+	margin: 0 auto;
+	padding: 1px;
+}
+#navigation ul {
+	display: inline-block;
+	width: 1000px;
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+}
+#navigation li {
+	float: left;
+	background-position: 0 -118px;
+	background-repeat: no-repeat;
+	height: 49px;
+	width: 130px;
+	margin: 0;
+	padding-left: 1px;
+	text-align: center;
+}
+
+#navigation li a {
+	color: #fff;
+	display: block;
+	font: bold 14px/48px Arial, Helvetica, sans-serif;
+	height: 49px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#navigation li a:hover {
+	background-position: 0 -59px;
+	color: #6d6157;
+}
+#navigation li.selected a {
+	background-position: 0 0;
+	color: #e4e1bd;
+}
+#navigation li, #navigation li a:hover, #navigation li.selected a {
+	background-image: url(./bg-menu.png);
+	background-repeat: repeat-x;
+}
+/**----------------------------------navigation----------------------**/
+
+
+
+#gap
+{
+	margin-top: 5px;
+	clear: both;
+}
+
+
+
+
+
+ 
